@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="controller.js"></script>
+    <script src="models/questionoperation.js"></script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Quiz Crud</legend>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Id</label>
+                </td>
+                <td>
+                    <label for="" id="qid"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Question</label>
+                </td>
+                <td>
+                    <textarea name="" id="question" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">a)</label>
+                </td>
+                <td>
+                    <textarea name="options" id="a" cols="30" rows="5" id="a"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">b)</label>
+                </td>
+                <td>
+                    <textarea name="options" id="b" cols="30" rows="5" id="b"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">c)</label>
+                </td>
+                <td>
+                    <textarea name="options" id="c" cols="30" rows="5" id="c"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">d)</label>
+                </td>
+                <td>
+                    <textarea name="options" id="d" cols="30" rows="5" id="d"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Right Answer</label>
+                </td>
+                <td>
+                    <input type="text" id="answer"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Score</label>
+                </td>
+                <td>
+                    <input type="text" id="score"> </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <button for="" class="labelbtn" id="addbtn">Add</button>
+                </td>
+                <td>
+                    <button for="" class="labelbtn" id="delbtn">Delete</button>
+                </td>
+                <td>
+                    <button for="" class="labelbtn" id="updbtn">Update</button>
+                </td>
+                <td>
+                    <button for="" class="labelbtn" id="srchbtn">Search</button>
+                </td>
+                <td>
+                    <button for="" class="labelbtn" id="savebtn">Save</button>
+                </td>
+                <td>
+                    <button for="" class="labelbtn" id="sortbtn">Sort</button>
+                </td>
+                <td>
+                    <button for="" class="labelbtn" id="loadbtn"> Load</button>
+                </td>
+                <td>
+                    <button for="" class="labelbtn" id="clrbtn">Clear</button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Question List</legend>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>
+                        <label for="" class="tablehead">Id</label>
+                    </td>
+                    <td>
+                        <label for="" class="tablehead">Name</label>
+                    </td>
+                    <td>
+                        <label for="" class="tablehead">Option1</label>
+                    </td>
+                    <td>
+                        <label for="" class="tablehead">Option2</label>
+                    </td>
+                    <td>
+                        <label for="" class="tablehead">Option3</label>
+                    </td>
+                    <td>
+                        <label for="" class="tablehead">Option4</label>
+                    </td>
+                    <td>
+                        <label for="" class="tablehead">Rans</label>
+                    </td>
+                    <td>
+                        <label for="" class="tablehead">Score</label>
+                    </td>
+                    <td>
+                        <label for="" class="tablehead">Operations</label>
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="tablebody"></tbody>
+        </table>
+    </fieldset>
+</body>
+
+</html>
