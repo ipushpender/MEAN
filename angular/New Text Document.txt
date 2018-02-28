@@ -1,0 +1,14 @@
+ng-app is like infinite  loop called digest cycle(always watch)
+ng-model:(data binding) binding html control.
+ng-init used to intialise the varible.
+for intialisation:ng-init"qt=0"
+
+two way(mvvm:model view view model);
+
+
+work to do::::::
+
+1.MVC in javascript.
+2.acces json data 
+3.Ajax.
+4.

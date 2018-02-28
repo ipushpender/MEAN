@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="angular.min.js"></script>
+<style>
+    .red {
+        background-color: red;
+    }
+    
+    .green {
+        background-color: green;
+    }
+</style>
+
+<body ng-app="">
+    <input type="checkbox" ng-model="tick"> show hide {{tick}}
+    <h1 ng-class="{'red':price<5000, 'green':price>=5000}">Class Demo</h1>
+    <div ng-show="tick">
+        <input ng-init="price=0" type="text" ng-model="price"> price is {{price|currency:'&#8377'}} </div>
+</body>
+
+</html>

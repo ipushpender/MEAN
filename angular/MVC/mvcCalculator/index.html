@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="lib/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
+</head>
+
+<body ng-app="calculator" ng-controller="myCal">
+    <div>
+        <label for=""> First No. </label>
+        <input type="text" ng-model="fnum"> </div>
+    <div>
+        <label for=""> Secound No. </label>
+        <input type="text" ng-model="secnum"> </div>
+    <button ng-click="add()"> + </button>
+    <button ng-click="sub()"> - </button>
+    <button ng-click="mul()"> * </button>
+    <button ng-click="div()"> /</button> Answer is: {{ Result }} </body>
+
+</html>

@@ -36,25 +36,24 @@ var questionobject = {
         this.qno++;
     }
 }
-
-function Question(qid, question, option, answer, score) {
-    this.qid = qid;
-    this.question = question;
-    this.option = option;
-    this.answer = answer;
-    this.score = score;
-}
-
+// function contructor - it is similar to class 
+//function Question(qid, question, option, answer, score) {
+//    this.qid = qid;
+//    this.question = question;
+//    this.option = option;
+//    this.answer = answer;
+//    this.score = score;
+//}
 function printRow(questionrow) {
     var index = 0;
     var table = document.getElementById('tablebody');
     var row = table.insertRow();
-    debugger;
+    //debugger;
     for (key in questionrow) {
         if (key == 'option') {
             var optionArr = questionrow[key];
             console.log("optionArr", optionArr);
-            optionArr.forEach(function (opt) {
+            optionArr.forEach((opt) => {
                 row.insertCell(index).innerHTML = opt;
                 index++;
             });

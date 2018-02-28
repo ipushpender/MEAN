@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .icon {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        function callimage() {
+            var input = document.getElementById('input').value;
+            var url = "http://api.giphy.com/v1/gifs/search?q=" + input + "&api_key=dc6zaTOxFJmzC&limit=20";
+            fetch(url).then(response => {
+                response.json().then(d => {
+                    document.getElementById('output').innerHTML = "";
+                    //console.log('data id', data);
+                    console.log("length", d.data.length);
+                    d = d.data;
+                    for (i = 0; i < d.length; i++) {
+                        var img = document.createElement('img');
+                        img.src = d[i].images.original.url;
+                        img.class = "icon";
+                        document.getElementById("output").appendChild(img);
+                    }
+                });
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="input" placeholder="Search any image" onchange="callimage()">
+    <div id="output"></div>
+</body>
+
+</html>

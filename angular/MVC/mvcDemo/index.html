@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="lib/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myctrl">
+    <div>
+        <input type="text" ng-model="name">
+        <button ng-click="showName()"> Click me</button>
+    </div>Name is {{resultname}} </body>
+
+</html>
