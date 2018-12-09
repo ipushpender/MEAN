@@ -1,0 +1,33 @@
+
+========================frontend===================================
+1.ng new frontend
+2.ng add @angular/material
+
+3.ng g c components/list
+3.ng g c components/create
+3.ng g c components/edit
+
+
+========================backend=====================================
+
+1. npm init -y
+2. npm i -save-dev babel-cli babel-preset-env   (for node_module package)
+3. create .babelrc file for configuration to use lite ecmascript 6
+4. npm i --save-dev babel-watch for always running like nodemon
+5. change in package.json file
+
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"babel-watch server.js"
+  },
+6.npm i express
+7.npm i mongooose
+8. npm i cors (middleware like mongodb on other machine)
+9. npm run dev( to run Expres)
+
+=================frontend and backend conecting==================
+
+1.ng g s issue (generate service)
+2.angular,nodejs server mongod should be run.
+
+
