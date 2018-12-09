@@ -1,0 +1,18 @@
+1.express npm install express-generator -hbs //skelton of node js 'hbs 'for viewengine
+express shopping-cart �hbs
+cd shopping-cart
+2.npm install  //node modules
+3.npm start
+4.get bootstrap/css/js cdn in layout.hbs
+5.get bootstrap->component->navbar code from site and copy paste to partials->header.hbs
+6.npm i --save express-handlebars
+7.to get thumnail u need to search bootstrap component.bootstrap cdn too
+8.npm i csurf --save //for random token every time
+9.npm i express-session --save
+10.npm i passport --save //for authentication
+11.npm i bcrypt-nodejs --save//encrypt
+12.npm i connect-flash --save//flash message
+13.npm i passport-local --save
+14.npm i express-validator --save
+15.npm i connect-mongo --save//for session storage in mongod
+16.npm i stripe --save // for payment 
