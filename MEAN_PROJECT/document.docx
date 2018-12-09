@@ -1,0 +1,11 @@
+//backend
+1.npm i expres-generator -hbs //optional
+2.express --view=hbs myapp
+3.npm i 
+//frontend
+1.cd ../../
+2.ng new frontend
+3.ng add @angular/material
+//connectivity
+1.ng g s issue (generate service)
+2.
